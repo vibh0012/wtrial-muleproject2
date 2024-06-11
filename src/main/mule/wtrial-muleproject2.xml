@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:request-config>
 	<flow name="wtrial-muleproject2Flow" doc:id="f8e3780f-b4b5-445c-b808-8b7d5ef6c4a7" >
 		<http:listener doc:name="Listener" doc:id="3b178c7a-07dc-4a28-9c5a-520aefbb93f7" config-ref="HTTP_Listener_config" path="/wtriall"/>
-		<logger level="INFO" doc:name="Logger" doc:id="e207081c-9305-4717-a0be-886e64a98fea" message='#["Test logger"]'/>
+		<logger level="INFO" doc:name="Merge Logger" doc:id="e207081c-9305-4717-a0be-886e64a98fea" message='#["Test logger"]'/>
 		<http:request method="GET" doc:name="Request" doc:id="f74d4e9c-f818-47ab-a7ed-c7d711dbefbb" config-ref="HTTP_Request_configuration" path="/api/v1/employees"/>
 	</flow>
 </mule>
